@@ -1,7 +1,7 @@
 let userForm=document.getElementById('user');
-let arr=[];
+let arr1=[];
 const ret=()=>{
-    let entry=JSON.parse(localStorage.getItem('arr'))||[];
+    let entry=JSON.parse(localStorage.getItem('arr1'))||[];
     return entry;
 }
 
@@ -67,9 +67,9 @@ const suf=(event)=>{
     const input={
         FullName,email,password,dob,terms
     };
-    arr=ret();
-    arr.push(input);
-    localStorage.setItem("arr",JSON.stringify(arr));
+    arr1=ret();
+    arr1.push(input);
+    localStorage.setItem("arr1",JSON.stringify(arr1));
     dis();
     userForm.reset();
     }
